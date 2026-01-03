@@ -52,7 +52,7 @@ export default function ArticleCard() {
 						</div>
 					</Link>
 				) : (
-					<div className='flex h-[60px] items-center justify-center'>
+					<div className='flex h-15 items-center justify-center'>
 						<span className='text-secondary text-xs'>暂无文章</span>
 					</div>
 				)}
