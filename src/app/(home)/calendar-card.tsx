@@ -3,7 +3,7 @@ import { useCenterStore } from '@/hooks/use-center'
 import { useConfigStore } from './stores/config-store'
 import { CARD_SPACING } from '@/consts'
 import dayjs from 'dayjs'
-import 'dayjs/locale/zh-cn'
+import 'dayjs/locale/en'
 import { cn } from '@/lib/utils'
 import { HomeDraggableLayer } from './home-draggable-layer'
 
@@ -42,7 +42,7 @@ export default function CalendarCard() {
 				<h3 className='text-secondary text-sm'>
 					{now.format('YYYY/M/D')} {now.format('ddd')}
 				</h3>
-				<ul className={cn('text-secondary mt-3 grid h-[206px] flex-1 grid-cols-7 gap-2 text-sm', (styles.height < 240 || styles.width < 240) && 'text-xs')}>
+				<ul className={cn('text-secondary mt-3 grid h-51.5 flex-1 grid-cols-7 gap-2 text-sm', (styles.height < 240 || styles.width < 240) && 'text-xs')}>
 					{new Array(7).fill(0).map((_, index) => {
 						const isCurrentWeekday = index === currentWeekday
 						return (
@@ -71,4 +71,4 @@ export default function CalendarCard() {
 	)
 }
 
-const dates = ['一', '二', '三', '四', '五', '六', '日']
+const dates = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']

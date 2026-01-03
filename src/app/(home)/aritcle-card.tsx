@@ -32,11 +32,11 @@ export default function ArticleCard() {
 					</>
 				)}
 
-				<h2 className='text-secondary text-sm'>最新文章</h2>
+				<h2 className='text-secondary text-sm'>Latest Posts</h2>
 
 				{loading ? (
-					<div className='flex h-[60px] items-center justify-center'>
-						<span className='text-secondary text-xs'>加载中...</span>
+					<div className='flex h-15 items-center justify-center'>
+						<span className='text-secondary text-xs'>Loading</span>
 					</div>
 				) : blog ? (
 					<Link href={`/blog/${blog.slug}`} className='flex transition-opacity hover:opacity-80'>
@@ -53,7 +53,7 @@ export default function ArticleCard() {
 					</Link>
 				) : (
 					<div className='flex h-15 items-center justify-center'>
-						<span className='text-secondary text-xs'>暂无文章</span>
+						<span className='text-secondary text-xs'>No posts yet</span>
 					</div>
 				)}
 			</Card>
