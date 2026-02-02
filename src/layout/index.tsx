@@ -8,7 +8,7 @@ import { CircleCheckIcon, InfoIcon, Loader2Icon, OctagonXIcon, TriangleAlertIcon
 import { useSize, useSizeInit } from '@/hooks/use-size'
 import { useConfigStore } from '@/app/(home)/stores/config-store'
 import { ScrollTopButton } from '@/components/scroll-top-button'
-import MusicCard from '@/components/music-card'
+import MusicCard from '@/app/(home)/music-card'
 
 export default function Layout({ children }: PropsWithChildren) {
 	useCenterInit()
