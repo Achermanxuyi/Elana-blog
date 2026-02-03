@@ -155,19 +155,22 @@ export function SocialButtonsSection({ formData, setFormData, socialButtonImageU
 							options={[
 								{ value: 'github', label: 'Github' },
 								{ value: 'juejin', label: '掘金' },
-								{ value: 'email', label: '邮箱' },
+								{ value: 'email', label: 'Email' },
 								{ value: 'x', label: 'X' },
+								{ value: 'linkedin', label: 'LinkedIn' },
+								{ value: 'youtube', label: 'YouTube' },
+								{ value: 'resume', label: 'Resume' },
 								{ value: 'tg', label: 'Telegram' },
-								{ value: 'wechat', label: '微信' },
+								{ value: 'wechat', label: 'Wechat' },
 								{ value: 'facebook', label: 'Facebook' },
 								{ value: 'tiktok', label: 'TikTok' },
 								{ value: 'instagram', label: 'Instagram' },
-								{ value: 'weibo', label: '微博' },
-								{ value: 'xiaohongshu', label: '小红书' },
-								{ value: 'zhihu', label: '知乎' },
-								{ value: 'bilibili', label: '哔哩哔哩' },
+								{ value: 'weibo', label: 'Weibo' },
+								{ value: 'xiaohongshu', label: 'RedNote' },
+								{ value: 'zhihu', label: 'Zhihu' },
+								{ value: 'bilibili', label: 'Bilibili' },
 								{ value: 'qq', label: 'QQ' },
-								{ value: 'link', label: '链接' }
+								{ value: 'link', label: 'Link' }
 							]}
 						/>
 						{button.type === 'wechat' || button.type === 'qq' ? (
