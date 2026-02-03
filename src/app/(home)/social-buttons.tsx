@@ -10,6 +10,9 @@ import WechatSVG from '@/svgs/wechat.svg'
 import FacebookSVG from '@/svgs/facebook.svg'
 import TiktokSVG from '@/svgs/tiktok.svg'
 import InstagramSVG from '@/svgs/instagram.svg'
+import LinkIn from '@/svgs/linkedin.svg'
+import YoutubeSVG from '@/svgs/youtube.svg'
+import ResumeSVG from '@/svgs/Resume.svg'
 import WeiboSVG from '@/svgs/weibo.svg'
 import XiaohongshuSVG from '@/svgs/小红书.svg'
 import ZhihuSVG from '@/svgs/知乎.svg'
@@ -34,6 +37,9 @@ type SocialButtonType =
 	| 'facebook'
 	| 'tiktok'
 	| 'instagram'
+	| 'linkedin'
+	| 'youtube'
+	| 'resume'
 	| 'weibo'
 	| 'xiaohongshu'
 	| 'zhihu'
@@ -119,6 +125,9 @@ export default function SocialButtons() {
 		facebook: FacebookSVG,
 		tiktok: TiktokSVG,
 		instagram: InstagramSVG,
+		linkedin: LinkIn,
+		youtube: YoutubeSVG,
+		resume: ResumeSVG,
 		weibo: WeiboSVG,
 		xiaohongshu: XiaohongshuSVG,
 		zhihu: ZhihuSVG,
