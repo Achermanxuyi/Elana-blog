@@ -70,4 +70,15 @@ function startWatch() {
 	}
 }
 
-startWatch()
+
+// Check for --watch flag
+const args = process.argv.slice(2)
+const isWatch = args.includes('--watch')
+
+// Always generate once
+main()
+
+// Then optionally watch
+if (isWatch) {
+	startWatch()
+}
