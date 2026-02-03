@@ -22,23 +22,9 @@
 		"#88E6E5",
 		"#a7f3d0"
 	],
-	"artImages": [
-		{
-			"id": "cat",
-			"url": "/images/art/cat.png"
-		},
-		{
-			"id": "a46372ff45bc5524",
-			"url": "/images/art/a46372ff45bc5524.jpg"
-		}
-	],
-	"currentArtImageId": "a46372ff45bc5524",
-	"backgroundImages": [
-		{
-			"id": "",
-			"url": ""
-		}
-	],
+	"artImages": [],
+	"currentArtImageId": "",
+	"backgroundImages": [],
 	"currentBackgroundImageId": "",
 	"socialButtons": [
 		{
