@@ -61,6 +61,13 @@
 			"value": "https://www.linkedin.com/in/elana-junji-liao/",
 			"label": "LinkedIn",
 			"order": 3
+		},
+		{
+			"id": "resume",
+			"type": "resume",
+			"value": "/resume.pdf",
+			"label": "",
+			"order": 2
 		}
 	],
 	"clockShowSeconds": false,

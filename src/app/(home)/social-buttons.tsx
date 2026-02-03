@@ -165,9 +165,22 @@ export default function SocialButtons() {
 			)
 		}
 
+		if (button.type === 'resume') {
+			return (
+				<motion.a
+					key={button.id}
+					href={button.value}
+					download
+					{...commonProps}
+					className='card btn relative rounded-xl p-1.5'>
+					<Icon className='size-8' />
+				</motion.a>
+			)
+		}
+
 		if (button.type === 'email' || button.type === 'wechat' || button.type === 'qq') {
 			const messageMap: Record<'email' | 'wechat' | 'qq', string> = {
-				email: '邮箱已复制到剪贴板',
+				email: 'Email address copied',
 				wechat: '微信号已复制到剪贴板',
 				qq: 'QQ号已复制到剪贴板'
 			}
