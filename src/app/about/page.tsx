@@ -175,7 +175,7 @@ export default function Page() {
 
 					<div className='mt-8 flex items-center justify-center gap-6'>
 						<motion.a
-							href='https://github.com/YYsuni/2025-blog-public'
+							href='https://github.com/Achermanxuyi/Elana-blog'
 							target='_blank'
 							rel='noreferrer'
 							initial={{ opacity: 0, scale: 0.6 }}
@@ -183,8 +183,6 @@ export default function Page() {
 							className='bg-card flex h-[53px] w-[53px] items-center justify-center rounded-full border'>
 							<GithubSVG />
 						</motion.a>
-
-						<LikeButton slug='open-source' />
 					</div>
 				</div>
 			</div>
