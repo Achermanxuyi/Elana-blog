@@ -5,22 +5,21 @@
 		"username": "Elana"
 	},
 	"theme": {
-		"colorBrand": "#35bfab",
-		"colorPrimary": "#334f52",
-		"colorSecondary": "#7b888e",
-		"colorBrandSecondary": "#1fc9e7",
-		"colorBg": "#eeeeee",
-		"colorBorder": "#ffffff",
-		"colorCard": "#ffffff66",
-		"colorArticle": "#ffffffcc"
+		"colorBrand": "#7DB9DE",
+		"colorPrimary": "#2F3A44",
+		"colorSecondary": "#6B7280",
+		"colorBrandSecondary": "#F4A7B9",
+		"colorBg": "#F8FAFC",
+		"colorBorder": "#E5E7EB",
+		"colorCard": "#FFFFFFCC",
+		"colorArticle": "#FFFFFFF2"
 	},
 	"backgroundColors": [
-		"#EDDD62",
-		"#9EE7D1",
-		"#84D68A",
-		"#EDDD62",
-		"#88E6E5",
-		"#a7f3d0"
+		"#E8F2FB",
+		"#FDECEF",
+		"#FFFFFF",
+		"#EAF6F6",
+		"#F9E8EE"
 	],
 	"artImages": [],
 	"currentArtImageId": "",
