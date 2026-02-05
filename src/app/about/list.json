@@ -1,5 +1,5 @@
 {
-	"title": "关于本站",
-	"description": "一个基于 Github 的现代化博客系统",
-	"content": "📦网站基于 Github 仓库完全存储，所有内容版本可控\n\n🚀无后端，无 serverless function，纯静态站点\n\n✏️文章通过可视化 UI 直接编辑并提交到 Github 仓库\n\n🔑所有用户都可以编辑，提交需要 Owner 的 Private Key\n\n## 技术栈\n\n- Next.js\n- React\n- TypeScript\n- Tailwind CSS\n- Motion\n- Github API"
+  "title": "About This Site",
+  "description": "A GitHub-powered modern static blog system",
+  "content": "📦 This website is fully stored in a GitHub repository, with all content versioned and tracked through Git\n\n🚀 No backend services or serverless functions — the site is built and delivered as a purely static application\n\n✏️ Articles can be created and edited through a visual UI, then committed directly to the GitHub repository\n\n🔑 Content editing is open to everyone, while final submissions require authorization via the Owner’s private key\n\n## Tech Stack\n\n- Next.js\n- React\n- TypeScript\n- Tailwind CSS\n- Motion\n- GitHub API"
 }
