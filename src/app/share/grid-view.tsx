@@ -19,7 +19,9 @@ export default function GridView({ shares, isEditMode = false, onUpdate, onDelet
 	const allTags = Array.from(new Set(shares.flatMap(share => share.tags)))
 
 	const filteredShares = shares.filter(share => {
-		const matchesSearch = share.name.toLowerCase().includes(searchTerm.toLowerCase()) || share.description.toLowerCase().includes(searchTerm.toLowerCase())
+		const matchesSearch =
+			share.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+			share.description.toLowerCase().includes(searchTerm.toLowerCase())
 		const matchesTag = selectedTag === 'all' || share.tags.includes(selectedTag)
 		return matchesSearch && matchesTag
 	})
@@ -29,7 +31,7 @@ export default function GridView({ shares, isEditMode = false, onUpdate, onDelet
 			<div className='mb-8 space-y-4'>
 				<input
 					type='text'
-					placeholder='搜索资源...'
+					placeholder='Search resources...'
 					value={searchTerm}
 					onChange={e => setSearchTerm(e.target.value)}
 					className='focus:ring-brand mx-auto block w-full max-w-md rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-none'
@@ -41,7 +43,7 @@ export default function GridView({ shares, isEditMode = false, onUpdate, onDelet
 						className={`rounded-full px-4 py-1.5 text-sm transition-colors ${
 							selectedTag === 'all' ? 'bg-brand text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
 						}`}>
-						全部
+						All
 					</button>
 					{allTags.map(tag => (
 						<button
@@ -58,13 +60,19 @@ export default function GridView({ shares, isEditMode = false, onUpdate, onDelet
 
 			<div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
 				{filteredShares.map(share => (
-					<ShareCard key={share.url} share={share} isEditMode={isEditMode} onUpdate={onUpdate} onDelete={() => onDelete?.(share)} />
+					<ShareCard
+						key={share.url}
+						share={share}
+						isEditMode={isEditMode}
+						onUpdate={onUpdate}
+						onDelete={() => onDelete?.(share)}
+					/>
 				))}
 			</div>
 
 			{filteredShares.length === 0 && (
 				<div className='mt-12 text-center text-gray-500'>
-					<p>没有找到相关资源</p>
+					<p>No resources found</p>
 				</div>
 			)}
 		</div>

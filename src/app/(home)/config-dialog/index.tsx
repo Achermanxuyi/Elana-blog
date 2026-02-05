@@ -86,7 +86,7 @@ export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 			await handleSave()
 		} catch (error) {
 			console.error('Failed to read private key:', error)
-			toast.error('读取密钥文件失败')
+			toast.error('Failed to read private key file')
 		}
 	}
 
