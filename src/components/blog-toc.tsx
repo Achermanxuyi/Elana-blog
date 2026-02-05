@@ -64,9 +64,9 @@ export function BlogToc({ toc, delay = 0 }: BlogTocProps) {
 			animate={{ opacity: 1, scale: 1 }}
 			transition={{ delay }}
 			className='bg-card w-full rounded-xl border p-3 text-sm'>
-			<h2 className='text-secondary mb-2 font-medium'>目录</h2>
+			<h2 className='text-secondary mb-2 font-medium'>Table of Contents</h2>
 			<div className='relative max-h-[300px] space-y-2 overflow-auto'>
-				{toc.length === 0 && <div className='text-secondary'>暂无</div>}
+				{toc.length === 0 && <div className='text-secondary'>None</div>}
 				{toc.map(item => (
 					<a
 						key={item.id + item.level}

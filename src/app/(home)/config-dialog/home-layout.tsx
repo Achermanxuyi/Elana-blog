@@ -6,19 +6,19 @@ import { useLayoutEditStore } from '../stores/layout-edit-store'
 import cardStylesDefault from '@/config/card-styles-default.json'
 
 const CARD_LABELS: Record<string, string> = {
-	artCard: '首图',
-	hiCard: '中心',
-	clockCard: '时钟',
-	calendarCard: '日历',
-	musicCard: '音乐',
-	socialButtons: '联系',
-	shareCard: '分享',
-	articleCard: '文章',
-	writeButtons: '写作',
-	navCard: '导航',
-	likePosition: '点赞',
-	hatCard: '帽子',
-	beianCard: '备案'
+	artCard: 'Cover',
+	hiCard: 'Center',
+	clockCard: 'Clock',
+	calendarCard: 'Calendar',
+	musicCard: 'Music',
+	socialButtons: 'Contact',
+	shareCard: 'Share',
+	articleCard: 'Article',
+	writeButtons: 'Writing',
+	navCard: 'Navigation',
+	likePosition: 'Like',
+	hatCard: 'Hat',
+	beianCard: 'ICP Filing'
 }
 
 interface HomeLayoutProps {
@@ -45,30 +45,30 @@ export function HomeLayout({ cardStylesData, setCardStylesData, onClose }: HomeL
 	return (
 		<div className='overflow-x-auto'>
 			<div className='flex items-center justify-between'>
-				<div className='text-secondary text-sm'>（偏移代表相对中心的偏移）</div>
-				<div className='flex shrink-0 items-center gap-2 whitespace-nowrap'>
-					<button type='button' onClick={handleReset} className='bg-card rounded-xl border px-3 py-1.5 text-xs font-medium'>
-						重置
+					<div className='text-secondary text-sm'>(Offset represents the offset relative to center)</div>
+					<div className='flex shrink-0 items-center gap-2 whitespace-nowrap'>
+						<button type='button' onClick={handleReset} className='bg-card rounded-xl border px-3 py-1.5 text-xs font-medium'>
+							Reset
 					</button>
 					<button
 						type='button'
 						onClick={handleStartManualLayout}
 						disabled={editing}
 						className='bg-card rounded-xl border px-3 py-1.5 text-xs font-medium disabled:cursor-not-allowed disabled:opacity-50'>
-						{editing ? '主页正在编辑中' : '进入主页拖拽布局'}
+							{editing ? 'Homepage is being edited' : 'Enter homepage drag-and-drop layout'}
 					</button>
 				</div>
 			</div>
 			<table className='mt-3 w-full border-collapse text-sm whitespace-nowrap'>
 				<thead>
 					<tr className='border-b text-xs text-gray-500'>
-						<th className='px-3 py-2 text-left font-medium'>卡片</th>
-						<th className='px-3 py-2 text-left font-medium'>宽度</th>
-						<th className='px-3 py-2 text-left font-medium'>高度</th>
-						<th className='px-3 py-2 text-left font-medium'>显示顺序</th>
-						<th className='px-3 py-2 text-left font-medium'>横向偏移</th>
-						<th className='px-3 py-2 text-left font-medium'>纵向偏移</th>
-						<th className='px-3 py-2 text-left font-medium'>启用</th>
+						<th className='px-3 py-2 text-left font-medium'>Card</th>
+						<th className='px-3 py-2 text-left font-medium'>Width</th>
+						<th className='px-3 py-2 text-left font-medium'>Height</th>
+						<th className='px-3 py-2 text-left font-medium'>Order</th>
+						<th className='px-3 py-2 text-left font-medium'>X Offset</th>
+						<th className='px-3 py-2 text-left font-medium'>Y Offset</th>
+						<th className='px-3 py-2 text-left font-medium'>Enabled</th>
 					</tr>
 				</thead>
 				<tbody>

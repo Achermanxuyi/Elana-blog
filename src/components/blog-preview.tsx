@@ -24,7 +24,7 @@ export function BlogPreview({ markdown, title, tags, date, summary, cover, slug 
 	const summaryInContent = siteContent.summaryInContent ?? false
 
 	if (loading) {
-		return <div className='text-secondary flex h-full items-center justify-center text-sm'>渲染中...</div>
+		return <div className='text-secondary flex h-full items-center justify-center text-sm'>Rendering...</div>
 	}
 
 	return (

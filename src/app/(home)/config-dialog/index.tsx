@@ -133,7 +133,7 @@ export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 			onClose()
 		} catch (error: any) {
 			console.error('Failed to save:', error)
-			toast.error(`保存失败: ${error?.message || '未知错误'}`)
+			toast.error(`Failed to save: ${error?.message || 'Unknown error'}`)
 		} finally {
 			setIsSaving(false)
 		}
@@ -219,12 +219,12 @@ export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 		onClose()
 	}
 
-	const buttonText = isAuth ? '保存' : '导入密钥'
+	const buttonText = isAuth ? 'Save' : 'Import Key'
 
 	const tabs: { id: TabType; label: string }[] = [
-		{ id: 'site', label: '网站设置' },
-		{ id: 'color', label: '色彩配置' },
-		{ id: 'layout', label: '首页布局' }
+		{ id: 'site', label: 'Site Settings' },
+		{ id: 'color', label: 'Color Config' },
+		{ id: 'layout', label: 'Homepage Layout' }
 	]
 
 	return (
@@ -262,7 +262,7 @@ export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 							whileTap={{ scale: 0.95 }}
 							onClick={handlePreview}
 							className='bg-card rounded-xl border px-6 py-2 text-sm'>
-							预览
+							Preview
 						</motion.button>
 						<motion.button
 							whileHover={{ scale: 1.05 }}
@@ -270,10 +270,10 @@ export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 							onClick={handleCancel}
 							disabled={isSaving}
 							className='bg-card rounded-xl border px-6 py-2 text-sm'>
-							取消
+							Cancel
 						</motion.button>
 						<motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={handleSaveClick} disabled={isSaving} className='brand-btn px-6'>
-							{isSaving ? '保存中...' : buttonText}
+							{isSaving ? 'Saving...' : buttonText}
 						</motion.button>
 					</div>
 				</div>

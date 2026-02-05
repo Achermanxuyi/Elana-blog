@@ -54,7 +54,7 @@ export default function WriteButton() {
 					)}
 
 					<PenSVG />
-					<span>写文章</span>
+					<span>Write a Blog</span>
 				</motion.button>
 				<motion.button
 					initial={{ opacity: 0, scale: 0.6 }}
