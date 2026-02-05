@@ -21,30 +21,56 @@ type ColorPreset = {
 
 const COLOR_PRESETS: ColorPreset[] = [
 	{
-		name: '春暖',
+		name: 'Default',
 		theme: {
-			colorBrand: '#35bfab',
-			colorBrandSecondary: '#1fc9e7',
-			colorPrimary: '#334f52',
-			colorSecondary: '#7b888e',
-			colorBg: '#eeeeee',
-			colorBorder: '#ffffff',
-			colorCard: '#ffffff66',
-			colorArticle: '#ffffffcc'
+			// Brand & buttons
+			colorBrand: '#7DB9DE',              // light blue (primary buttons / highlights)
+			colorBrandSecondary: '#F4A7B9',      // light pink (secondary buttons / accents)
+
+			// Text
+			colorPrimary: '#2F3A44',             // dark blue-gray for readability
+			colorSecondary: '#6B7280',           // neutral gray
+
+			// Backgrounds
+			colorBg: '#F8FAFC',                  // near-white light blue background
+			colorBorder: '#E5E7EB',               // subtle borders
+			colorCard: '#FFFFFFCC',               // translucent white cards
+			colorArticle: '#FFFFFFF2'             // solid white article area
 		},
-		backgroundColors: ['#EDDD62', '#9EE7D1', '#84D68A', '#EDDD62', '#88E6E5', '#a7f3d0']
+		backgroundColors: [
+			'#E8F2FB',  // light blue
+			'#FDECEF',  // light pink
+			'#FFFFFF',  // white
+			'#EAF6F6',
+			'#F9E8EE'
+		]
 	},
 	{
-		name: '秋实',
+		name: 'Light',
 		theme: {
-			colorPrimary: '#4E3F42',
-			colorBrand: '#de4331',
-			colorBrandSecondary: '#FCC841'
+			// Brand & buttons
+			colorBrand: '#4078F2',               // One Light blue
+			colorBrandSecondary: '#C18401',      // warm yellow accent
+
+			// Text
+			colorPrimary: '#383A42',             // One Light primary text
+			colorSecondary: '#696C77',           // muted secondary text
+
+			// Backgrounds
+			colorBg: '#FAFAFA',                  // One Light background
+			colorBorder: '#E5E5E6',
+			colorCard: '#FFFFFF',                // clean solid cards
+			colorArticle: '#FFFFFF'
 		},
-		backgroundColors: ['#FCC841', '#DFEFFC', '#DEDE92', '#DE4331', '#FE9750', '#FCC841']
+		backgroundColors: [
+			'#FAFAFA',
+			'#F0F0F1',
+			'#FFFFFF',
+			'#EAEAEB'
+		]
 	},
 	{
-		name: '深夜',
+		name: 'Dark',
 		theme: {
 			colorBrand: '#2a48f3',
 			colorPrimary: '#e6e8e8',
